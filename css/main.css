@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Tanha-FD;
+    src: url(../fonts/Tanha-FD.ttf);
+}
+*{
+    direction: rtl;
+    font-family: Tanha-FD;
+    box-sizing: borser-box;
+}
+
+body{
+    font-size: 16px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
