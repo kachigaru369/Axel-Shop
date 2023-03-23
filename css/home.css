@@ -1,21 +1,15 @@
- /* body{
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background-image: url(../images/wp4833742-anime-dark-1920x1080-wallpapers.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-} */
 header{
     
 }
+
+/* navigation secton */
 
 header nav{
     display: flex;
     justify-content: space-between ;
     padding: 10px 15px;
     font-size: 1em;
+    background-color: #444;
 }
 
 header nav .nav-right{
@@ -25,32 +19,124 @@ header nav .nav-right{
 }
 
 header nav .nav-right a{
-    color: #444;
+    color: rgba(255, 255, 255, .8);
     padding: 5px 10px;
     margin: 0px 5px;
     font-size: 1.1em;
+}
 
-
+header nav .nav-right a:hover{
+    color: white;
+    background-color: #2D2727;
+    cursor: pointer;
+    border-radius: 20%;
 }
 
 
 header nav .nav-left .register-login-btn{
-    border: 1px solid #666;
-    padding: 5px 8px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    padding: 1px 1px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+header nav .nav-left .register-login-btn:hover{
+    /* border: 1px solid white; */
+    color: white;
+    background-color: #2D2727;
+    cursor: pointer;
+}
+header nav .nav-left .register-login-btn:hover a{
+    color: white;
+    background-color: #2D2727;
+    cursor: pointer;
+}
+header nav .nav-left .register-login-btn:hover i{
+    color: white;
+    background-color: #2D2727;
+    cursor: pointer;
+}
+
 
 header nav .nav-left .register-login-btn i{
     margin: 7px;
-    color: #444;
+    color: rgba(255, 255, 255, .8);
 }
 
+
 header nav .nav-left .register-login-btn a{
-    color: #444;
+    color: rgba(255, 255, 255, .8);
     padding: 0px 10px;
     font-size: 0.9em;
 }
- 
+
+
+/* slider section */
+
+.slider{
+    position: relative;
+    font-size: 1em;
+}
+
+.slider .slides{
+    
+}
+
+.slider .slides .item{
+    position: relative;
+    display: none;
+}
+
+.slider .slides .item img{
+    width: 100%;
+    
+}
+
+.slider .slides .item .s1{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    font-size: 1.5em;
+    color: #444;
+}
+.slider .slides .item .s2{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+.slider .slides .item .s3{
+    position: absolute;
+    right: 18%;
+    top: 70%;
+    font-size: 1.5em;
+    color: black;
+}
+
+.slider .slides .active{
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.slider .buttons{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+.slider .buttons i{
+    color: rgba(255, 255, 255, .7);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slider .buttons i:hover{
+    color: rgba(255, 255, 255, .4);
+}
+
+/* produt section */
+
