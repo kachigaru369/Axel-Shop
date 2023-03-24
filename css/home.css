@@ -1,3 +1,6 @@
+body{
+    background-color: #1f1f1f;
+}
 header{
     
 }
@@ -9,7 +12,13 @@ header nav{
     justify-content: space-between ;
     padding: 10px 15px;
     font-size: 1em;
-    background-color: #444;
+    background-color: rgb(28, 28, 28);
+}
+
+header nav .first-title a{
+    font-family: SaintCarell;
+    font-size: 2.2em;
+    color: white;
 }
 
 header nav .nav-right{
@@ -23,6 +32,8 @@ header nav .nav-right a{
     padding: 5px 10px;
     margin: 0px 5px;
     font-size: 1.1em;
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 1);
+    transition: .75s;
 }
 
 header nav .nav-right a:hover{
@@ -30,6 +41,7 @@ header nav .nav-right a:hover{
     background-color: #2D2727;
     cursor: pointer;
     border-radius: 20%;
+    box-shadow: 2px 5px 8px 2px rgba(255, 255, 255 ,.5);
 }
 
 
@@ -40,12 +52,15 @@ header nav .nav-left .register-login-btn{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 1);
+    transition: .75s;
 }
 header nav .nav-left .register-login-btn:hover{
     /* border: 1px solid white; */
     color: white;
     background-color: #2D2727;
     cursor: pointer;
+    box-shadow: 2px 5px 8px 2px rgba(255, 255, 255 ,.5);
 }
 header nav .nav-left .register-login-btn:hover a{
     color: white;
@@ -90,7 +105,7 @@ header nav .nav-left .register-login-btn a{
 
 .slider .slides .item img{
     width: 100%;
-    
+    height: 26em;
 }
 
 .slider .slides .item .s1{
@@ -140,3 +155,108 @@ header nav .nav-left .register-login-btn a{
 
 /* produt section */
 
+.product-sec-new{
+    padding: 20px 10px;
+    font-size: 1em;
+    background-color: #1f1f1f;
+    /* border: 0px;
+    margin: 0px;
+    padding: 0px; */
+}
+
+.product-sec-new .shopping-card{
+    text-align: center;
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.7);
+    margin: 10px 5px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 1);
+    transition: .75s;
+}
+.product-sec-new .shopping-card:hover{
+    box-shadow: 5px 10px 15px 5px rgba(255, 255, 255 ,.7);
+}
+
+.shopping-card .img-sec{
+    position: relative;
+}
+
+.shopping-card .img-sec img{
+    width: 60%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.shopping-card .img-sec .hot-offer{
+    background-color: #FC2947;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: .9em;
+}
+
+.shopping-card .img-sec .stars{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #F7DB6A;
+}
+
+.shopping-card .title{
+    color: #ffffff;
+    margin: 15px;
+}
+
+.shopping-card .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.shopping-card .buttons .right .price{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.shopping-card .buttons .left{
+    display: flex;
+
+}
+
+.shopping-card .buttons .left .extend-btn{
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FC2947;
+    color: white;
+    width: 2.5em;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .75s;
+
+}
+.shopping-card .buttons .left .extend-btn:hover{
+    width: 100px;
+}
+
+.shopping-card .buttons .left .extend-btn:hover .b-text{
+    display: block;
+    color: white;
+    animation-name: fadeIn;
+    animation-duration: .75s;
+}
+
+.shopping-card .buttons .left .extend-btn .b-text{
+    display: none;
+    
+}
+
+.shopping-card .buttons .left .extend-btn .b-icon{
+    color: white;
+}

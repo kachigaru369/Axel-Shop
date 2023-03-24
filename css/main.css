@@ -5,7 +5,11 @@
 *{
     direction: rtl;
     font-family: Tanha-FD;
-    box-sizing: borser-box;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: SaintCarell;
+    src: url(../fonts/SaintCarell.otf);
 }
 
 body{
