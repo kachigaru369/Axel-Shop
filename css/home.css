@@ -374,8 +374,11 @@ header nav .nav-left .register-login-btn a{
     box-shadow: 5px 10px 15px 5px rgba(255, 255, 255 ,.7);
 }
 
+/* draggable list */
+
 .dragble-list .item{
     margin: 20px;
+    margin-bottom: 30px;
 }
 
 .dragble-list img{
@@ -398,3 +401,65 @@ header nav .nav-left .register-login-btn a{
     font-size: 1.2em;
     border-bottom: 2px solid #FC2947;
 }
+
+/* footer */
+
+footer{
+    background-color: rgb(16, 14, 14);
+    font-size: 1em;
+}
+
+footer .right{
+    padding: 40px;
+}
+
+footer .right .title{
+    padding: 10px 0px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer .right .des{
+    color: whitesmoke;
+    line-height: 2em;
+    font-size: .9em;
+}
+
+
+footer .left{
+    padding: 40px;
+}
+
+footer .left .title{
+    color: whitesmoke;
+    padding: 10px 0px;
+    font-size: 1.2em;
+    margin-right: 30px;
+}
+
+footer .left .socials{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+footer .left .socials a{
+    color: rgba(255, 255, 255, .5);
+    transition: .3s;
+    font-size: 1.2em;
+}
+
+footer .left .socials a:hover{
+    color: white;
+}
+
+footer .bottom{
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    font-size: .9em;
+}
+
